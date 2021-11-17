@@ -18,7 +18,7 @@ function App(){
         <Row>
           <Col>
           <h2>Merch #1</h2>
-          <Item />
+          <ItemList />
           </Col>
           <Col>
           <h2>Merch #2</h2>
