@@ -19,7 +19,7 @@ class ItemControl extends React.Component {
     }));
   }
 
-  handleAddingNewTicketToList = (newItem) => {
+  handleAddingNewItemToList = (newItem) => {
     const newMainItemList = this.state.mainItemList.concat(newItem);
     this.setState({mainItemList: newMainItemList,
                   formVisibleOnPage: false });

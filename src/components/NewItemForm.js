@@ -17,14 +17,14 @@ function NewItemForm(props){
       <form onSubmit={handleNewItemFormSubmission}>
         <input
           type='text'
-          name='Guppie name'
+          name='name'
           placeholder='Giggle Guppie' />
         <input
           type='text'
-          name='Quantity'
+          name='quantity'
           placeholder='How many to put in stock' />
         <textarea
-          name='Description'
+          name='description'
           placeholder='Tell us all about the new Guppie!' />
         <button type='submit'>Create!</button>
       </form>
