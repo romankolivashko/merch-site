@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./components/Header";
-import Item from "./components/Item";
-//import ItemList from "./components/ItemList";
+//import Item from "./components/Item";
+import ItemControl from "./components/ItemControl";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -18,7 +18,7 @@ function App(){
         <Row>
           <Col>
           <h2>Merch #1</h2>
-          <ItemList />
+          <ItemControl />
           </Col>
           <Col>
           <h2>Merch #2</h2>
