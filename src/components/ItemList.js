@@ -8,11 +8,14 @@ function ItemList(props){
   return (
     <React.Fragment>
         <hr/>
-        {props.itemList.map((item, index) =>
-          <Item name={item.name}
+        {props.itemList.map((item) =>
+          <Item 
+            whenItemClicked = {props.onItemSelection}
+            name={item.name}
             description={item.description}
             quantity={item.quantity}
-            key={index}/>
+            id={item.id}
+            key={item.id}/>
         )}
       </React.Fragment>
   );
@@ -20,7 +23,8 @@ function ItemList(props){
 
 // Add propTypes for itemList.
 ItemList.propTypes = {
-  itemList: PropTypes.array
+  itemList: PropTypes.array,
+  onTicketSelection: PropTypes.func
 };
 
 export default ItemList;
