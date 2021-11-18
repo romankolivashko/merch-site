@@ -127,7 +127,16 @@ class ItemControl extends React.Component {
     }
   };
 
-  
+  handleRestockItem = () => {
+    let restockItem = this.state.mainItemList.filter(item => item.id === this.state.selectedItem.id)[0];
+    
+
+      restockItem.quantity +=5;
+
+      this.setState({
+        restockItem: restockItem
+      });
+    }
 
   render() {
     let currentlyVisibleState = null;
@@ -148,6 +157,7 @@ class ItemControl extends React.Component {
           onClickingDelete={this.handleDeletingItem}
           onClickingEdit={this.handleEditClick}
           onClickingPurchase={this.handlePurchaseItem}
+          onClickingRestock={this.handleRestockItem}
         />
       );
       buttonText = "Return to Item List";

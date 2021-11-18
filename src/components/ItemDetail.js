@@ -10,7 +10,7 @@ function ItemDetail(props) {
 <h3>{item.name} - {item.description}</h3>
       <p><em>{item.quantity}</em></p>
       <button onClick={ props.onClickingPurchase}>Purchase Item</button>
-      <button>Restock Item</button>
+      <button onClick={ props.onClickingRestock}> Restock Item</button>
       <button onClick={ props.onClickingEdit }>Update Item</button>
       <button onClick={()=> onClickingDelete(item.id) }>Delete Item</button>
       <hr/>
